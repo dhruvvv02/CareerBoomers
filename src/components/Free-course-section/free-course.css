@@ -1,0 +1,178 @@
+.courses-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Free courses container */
+.free-courses-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.free-courses-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Track that moves */
+.free-courses-track {
+  display: flex;
+  animation: scrollLeft 25s linear infinite;
+}
+@keyframes scrollLeft{
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-button {
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+  z-index: 1;
+}
+
+.slider-button.left {
+  position: absolute;
+  left: 0;
+}
+
+.slider-button.right {
+  position: absolute;
+  right: 0;
+}
+
+/* Pause animation on hover */
+.free-courses-container:hover .free-courses-track {
+  animation-play-state: paused;
+}
+
+.no-link{
+  text-decoration: none;
+  color: inherit;
+}
+/* Each card */
+.single__free__course {
+  display: inline-block;
+  width: 400px; /* Adjusted width */
+  height: 450px;
+  margin-right: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Allow absolute positioning inside */
+}
+
+/* Hover effect on individual course card */
+.single__free__course:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Free course image */
+.free__course__img {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Set height for consistent size */
+}
+
+/* Ensure the image fits well */
+.free__course__img img {
+  width: 100%;
+  height: 100%; /* Fill the container */
+  border-radius: 10px;
+}
+
+/* Button positioning */
+.free__btn {
+  display: block;
+  margin-top: 10px;
+  padding: 4px 25px !important;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 10px; /* Adjusted position */
+  right: 10px; /* Adjusted position */
+  
+}
+
+/* Free course details */
+.free__course__details {
+  padding-top: 10px;
+  padding-bottom: 10px; /* Add padding for spacing */
+  text-align: center; /* Center the text */
+}
+
+.free__course__details h6 {
+  font-weight: 600;
+  line-height: 1.5rem; /* Adjust line height for better spacing */
+}
+
+/* Student and rating information */
+.free__course__details span {
+  display: inline-block;
+  margin-right: 10px; /* Space between elements */
+  
+}
+
+
+
+.exam-details {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.exam-category {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.exam-names {
+  padding-left: 20px; /* Indent the exam names */
+}
+
+.exam-names a {
+  display: block;
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin-bottom: 5px; /* Space between exam names */
+}
+
+.exam-names a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.slider-button {
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+  z-index: 1;
+}
+
+.slider-button.left {
+  position: absolute;
+  left: 0;
+}
+
+.slider-button.right {
+  position: absolute;
+  right: 0;
+}
+

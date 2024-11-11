@@ -1,0 +1,21 @@
+
+.testimonial__img{
+    
+    margin-right: 5px;
+}
+
+.testimonial__content{
+  
+}
+.testimonial__content h2 {
+    font-weight: 600;
+  }
+
+  .testimonial__content p {
+    font-size: 1.15rem; /* Adjust the size as needed */
+    line-height: 1.6; /* Optional: Adjust line height for better spacing */
+  }
+
+  .single__testimonial h3{
+    color: #A01641;
+  }
